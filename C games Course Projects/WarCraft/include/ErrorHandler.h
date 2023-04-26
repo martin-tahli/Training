@@ -1,0 +1,24 @@
+
+#ifndef S04_SAMURAI_JACK_ERRORHANDLER_H
+#define S04_SAMURAI_JACK_ERRORHANDLER_H
+
+
+#include <stdio.h>
+
+
+void printErrorStatus(int idx);
+
+
+enum errorsCodeList {
+
+    ERR_MMU_VECTOR_INIT = 0,
+    ERR_ALLOCATE_ARCHMAGE,
+    ERR_ALLOCATE_PALADIN,
+    ERR_ALLOCATE_DEATH_KNIGHT,
+    ERR_ALLOCATE_DRAW_RANGER,
+    ERR_ALLOCATE_INIT_HERO
+
+};
+
+
+#endif //S04_SAMURAI_JACK_ERRORHANDLER_H

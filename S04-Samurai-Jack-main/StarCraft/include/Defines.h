@@ -1,0 +1,65 @@
+#ifndef DEFINES_H_
+#define DEFINES_H_
+
+
+
+#define TRUE 1
+#define FALSE 0
+
+#define TRUE 1
+#define FALSE 0
+#define string char*
+
+#define TEAM1  1
+#define TEAM2  2
+
+extern int team1RaceID;
+
+extern int team2RaceID;
+
+enum AirShipDefines {
+  BATTLE_CRUSER_HEALTH = 450,
+  BATTLE_CRUSER_DAMAGE = 40,
+
+  VIKING_HEALTH = 150,
+  VIKING_DAMAGE = 15,
+
+  CARRIER_HEALTH = 200,
+  CARRIER_SHIELD = 150,
+  CARRIER_DAMAGE = 8,
+  CARRIER_SHIELD_REGENERATE_RATE = 40,
+
+  PHOENIX_HEALTH = 90,
+  PHOENIX_SHIELD = 90,
+  PHOENIX_DAMAGE = 20,
+  PHOENIX_SHIELD_REGENERATE_RATE = 20,
+
+  MUTALISK_HEALTH = 120,
+  MUTALISK_HEALTH_REGEN = 10,
+  MUTALISK_DAMAGE = 20,
+
+  BROODLORD_HEALTH = 225,
+  BROODLORD_ARMOR = 10,
+  BROODLORD_BROODLINGS_COUNT = 2,
+  BROODLORD_DAMAGE = 20
+
+};
+
+enum AirShipType {
+  BATTLE_CRUSER, VIKING, CARRIER, PHOENIX, MUTALISK, BROODLORD
+};
+
+enum Races {
+    TERRAN = 0, PROTOSS = 1, ZERG = 2
+};
+
+enum CarrierDefines {
+  MAX_INTERCEPTORS = 8,
+  DAMAGED_STATUS_INTERCEPTORS = 4
+};
+
+enum BattleCruserDefines {
+  YAMATO_CANNON_LOADING_TURNS = 5
+};
+
+#endif /* DEFINES_H_ */
